@@ -1,14 +1,19 @@
 import React from 'react'
 import {motion} from 'framer-motion'
+import pro1img from '../assets/pro1.png'
+import pro2img from '../assets/pro2.png'
+import pro3img from '../assets/pro3.png'
+import pro4img from '../assets/pro4.png'
+import pro5img from '../assets/pro5.png'
 
 function Project() {
 
     const project = [
-        {image:'src/assets/pro1.png',name:'E-Commerce project'},
-        {image:'src/assets/pro2.png',name:'Guess Number'},
-        {image:'src/assets/pro3.png',name:'TO-DO List'},
-        {image:'src/assets/pro4.png',name:'E-Commerce UI'},
-        {image:'src/assets/pro5.png',name:'CRUD Project'},
+        {image:[pro1img],name:'E-Commerce project'},
+        {image:[pro2img],name:'Guess Number'},
+        {image:[pro3img],name:'TO-DO List'},
+        {image:[pro4img],name:'E-Commerce UI'},
+        {image:[pro5img],name:'CRUD Project'},
 
     ]
 

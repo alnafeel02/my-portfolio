@@ -1,5 +1,6 @@
-import React from 'react'
-import {motion} from 'framer-motion'
+import React from 'react';
+import {motion} from 'framer-motion';
+import myimage from "../assets/nafee.jpeg";
 
 function Hero() {
   return (
@@ -19,7 +20,7 @@ function Hero() {
         <motion.img  initial={{ opacity: 0 ,x:0}}
   whileInView={{ opacity: 1,x:-20 }} 
   transition={{duration:1.5,delay: 1}}
-  src="src\assets\nafee.jpeg" className='md:w-[450px] md:h-[450px] rounded-full md:mt-25 md:ms-15 w-[250px] h-[250px] ms-30' alt="main" />
+  src={myimage} className='md:w-[450px] md:h-[450px] rounded-full md:mt-25 md:ms-15 w-[250px] h-[250px] ms-30' alt="main" />
     </div>
 </section>
   )

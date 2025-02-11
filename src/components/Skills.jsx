@@ -1,16 +1,23 @@
 import React from 'react'
 import {animate, motion} from 'framer-motion'
+import htmlimg from '../assets/icon_html.png'
+import cssimg from '../assets/icon_css.png'
+import jsimg from '../assets/icon_js.png'
+import reactimg from '../assets/icon_react.png'
+import bootimg from '../assets/icon_bootstrap.png'
+import tailimg from '../assets/icon_tailwind.png'
+
 
 
 
 function Skills() {
   const picture = [
-    {image:'src/assets/icon_html.png'},
-    {image:'src/assets/icon_css.png'},
-    {image:'src/assets/icon_js.png'},
-    {image:'src/assets/icon_react.png'},
-    {image:'src/assets/icon_bootstrap.png'},
-    {image:'src/assets/icon_tailwind.png'},
+    {image:[htmlimg]},
+    {image:[cssimg]},
+    {image:[jsimg]},
+    {image:[reactimg]},
+    {image:[bootimg]},
+    {image:[tailimg]},
   ]
 
   const iconVariants = (duration) => ({

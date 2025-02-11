@@ -1,14 +1,15 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub,faLinkedin,faInstagram } from '@fortawesome/free-brands-svg-icons';
-import {animate, motion} from 'framer-motion'
+import {motion} from 'framer-motion'
+import contactimg from '../assets/map.avif'
 
 function Contact() {
   return (
     <section className='w-full h-full mx-auto  md:mt-40 font-poppins sm:mt-10 overflow-x-clip'>
         <h1 className='text-5xl ms-5'>Contact</h1>
         <div>
-            <img src="src/assets/map.avif" alt="map" className='w-full h-full opacity-12 absolute'/>
+            <img src={contactimg} alt="map" className='w-full h-full opacity-12 absolute'/>
             <div className='relative top-50 left-50 space-y-12 flex-col  '>
             <motion.h1 initial={{x: 0,opacity: 0}}
             whileInView={{x:0,opacity:1}}

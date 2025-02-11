@@ -1,5 +1,6 @@
-import React from 'react'
-import {motion} from 'framer-motion'
+import React from 'react';
+import {motion} from 'framer-motion';
+import aboutImg from '../assets/nafee2.jpg';
 
 function About() {
   return (
@@ -10,7 +11,7 @@ function About() {
             initial={{ opacity: 0,x:0}}
             whileInView={{ opacity: 1,x:60 }}
             transition={{duration:1.5,delay: 1}}
-            src="src\assets\nafee2.jpg" alt="" className='md:w-[300px] md:h-[400px] w-[200px] rounded-4xl mt-30 md:ms-30 mb-14 '/>
+            src={aboutImg} alt="" className='md:w-[300px] md:h-[400px] w-[200px] rounded-4xl mt-30 md:ms-30 mb-14 '/>
             <motion.p 
             initial={{ opacity: 0,x:0}}
             whileInView={{ opacity: 1,x:-50 }}
