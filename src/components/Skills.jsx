@@ -20,38 +20,62 @@ function Skills() {
     {image:[tailimg]},
   ]
 
-  const iconVariants = (duration) => ({
-    initial: {},
-    animate: {
-      x:[10,-10],
-      transition:{
-        duration: duration,
-        ease:"linear",
-        repeat: Infinity,
-        repeatType:"reverse",
-      }
-    },
-  })
+  const containerVariants = {
+  hidden: {
+    opacity: 0,
+    // optionally you can shift up/down
+    y: 20,
+
+  },
+  show: {
+    opacity: 1,
+    transition: {
+      // delay before children start
+      delayChildren: 0.3,
+      // time between each child animation
+      staggerChildren: 0.3
+    }
+  },
+  
+};
+
+// Variants for each item
+const itemVariants = {
+  hidden: {
+    opacity: 0,
+    y: 20
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5
+    }
+  }
+};
+  
   return (
-    <section className='w-full h-full mx-auto  font-poppins overflow-x-hidden'>  
+    <section className='w-full h-full mx-auto  font-poppins overflow-x-hidden overflow-y-hidden'>  
         <div > 
             <h1 className='text-5xl pt-20 ms-4 '>Skills</h1>
         </div>
-        <div className=' gap-3  flex ms-25 mt-20  justify-center'>
-          <div className='flex  gap-3 flex-wrap'>
+        <motion.div
+        variants={containerVariants}
+          initial="hidden"
+          whileInView="show"
+        className=' gap-3  flex lg:ms-25 lg:mt-20  justify-center'>
+          <div className='flex  gap-3 flex-wrap mb-20'>
             {
               picture.map((item)=>
                 <motion.div
-                variants={iconVariants(2.5)}
-                initial="initial"
-                animate="animate"
-                className='w-[150px] h-[150px] border-4 rounded-full hover:scale-50'>
-                  <img className='w-[100px] h-[100px] ms-5 mt-5' src={item.image} alt="html" />
+                 variants={itemVariants}
+                className='lg:w-[150px] lg:h-[150px] w-[50px] h-[50px] border-4 rounded-full hover:scale-110 hover:border-purple-600 border-gray-300 justify-center flex items-center '>
+                  <img className='lg:w-[100px] lg:h-[100px] w-[30px] h-[30px] lg:ms-5 lg:mt-5' src={item.image} alt="html" />
                 </motion.div>
              )
             }
           </div>
-      </div>
+      </motion.div>
     </section>
   )
 }

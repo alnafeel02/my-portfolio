@@ -24,12 +24,12 @@ function Project() {
         {
             project.map((item)=>
                 <motion.div
-                initial={{ opacity: 0,y: 0 ,x:6 }}
-                whileInView={{ opacity: 1,y: -50 }}
+                initial={{ opacity: 0,y:0 }}
+                whileInView={{ opacity: 1,y: -50 ,x:-20 }}
                 transition={{duration:1.9,delay: 1}}
-                className='hover:scale-95 w-[250px] h-[350px]'>
-                <img src={item.image} alt="pro1" className='w-[250px] h-[250px]'/>
-                <h2 className='text-xl text-center'>{item.name}</h2>
+                className='hover:scale-95 lg:w-[250px] lg:h-[350px] '>
+                <img src={item.image} alt="pro1" className='lg:w-[250px] lg:h-[250px] w-[200px] h-[200px] rounded-xl'/>
+                <h2 className='text-xl text-center mt-2'>{item.name}</h2>
                 </motion.div>
             )
         }
