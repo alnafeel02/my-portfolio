@@ -3,11 +3,14 @@ import {animate, motion} from 'framer-motion'
 import htmlimg from '../assets/icon_html.png'
 import cssimg from '../assets/icon_css.png'
 import jsimg from '../assets/icon_js.png'
-import reactimg from '../assets/icon_react.png'
+import reactimg from '../assets/atom.png'
 import bootimg from '../assets/icon_bootstrap.png'
 import tailimg from '../assets/icon_tailwind.png'
-
-
+import nodeimg from '../assets/node-js.png'
+import expressimg from '../assets/icons8-express-js-96.png'
+import mongoimg from '../assets/icons8-mongo-db-96.png'
+import mysqlimg from '../assets/mysql.png'
+import figmaimg from '../assets/figma.png'
 
 
 function Skills() {
@@ -16,8 +19,13 @@ function Skills() {
     {image:[cssimg]},
     {image:[jsimg]},
     {image:[reactimg]},
+    {image:[nodeimg]},
+    {image:[expressimg]},
+    {image:[mongoimg]},
+    {image:[mysqlimg]},
     {image:[bootimg]},
     {image:[tailimg]},
+    {image:[figmaimg]},
   ]
 
   const containerVariants = {
@@ -63,7 +71,7 @@ const itemVariants = {
         variants={containerVariants}
           initial="hidden"
           whileInView="show"
-        className=' gap-3  flex lg:ms-25 lg:mt-20  justify-center'>
+        className=' gap-3  flex lg:ms-25 lg:mt-20  justify-center ms-10 me-10'>
           <div className='flex  gap-3 flex-wrap mb-20'>
             {
               picture.map((item)=>

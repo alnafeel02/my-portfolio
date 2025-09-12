@@ -5,10 +5,12 @@ import pro2img from '../assets/pro2.png'
 import pro3img from '../assets/pro3.png'
 import pro4img from '../assets/pro4.png'
 import pro5img from '../assets/pro5.png'
+import pro6img from '../assets/pro6.png'
 
 function Project() {
 
     const project = [
+        {image:[pro6img],name:'Authentication Project'},
         {image:[pro1img],name:'E-Commerce project'},
         {image:[pro2img],name:'Guess Number'},
         {image:[pro3img],name:'TO-DO List'},
