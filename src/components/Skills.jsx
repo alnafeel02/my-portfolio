@@ -11,6 +11,7 @@ import expressimg from '../assets/icons8-express-js-96.png'
 import mongoimg from '../assets/icons8-mongo-db-96.png'
 import mysqlimg from '../assets/mysql.png'
 import figmaimg from '../assets/figma.png'
+import gitimg from '../assets/icons8-git-100.png'
 
 
 function Skills() {
@@ -26,6 +27,7 @@ function Skills() {
     {image:[bootimg]},
     {image:[tailimg]},
     {image:[figmaimg]},
+    {image:[gitimg]},
   ]
 
   const containerVariants = {
@@ -71,7 +73,7 @@ const itemVariants = {
         variants={containerVariants}
           initial="hidden"
           whileInView="show"
-        className=' gap-3  flex lg:ms-25 lg:mt-20  justify-center ms-10 me-10'>
+        className=' gap-3  flex lg:ms-25 lg:mt-20  justify-center ms-15 me-10'>
           <div className='flex  gap-3 flex-wrap mb-20'>
             {
               picture.map((item)=>
