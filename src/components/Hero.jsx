@@ -35,7 +35,7 @@ function Hero() {
         whileInView={{ opacity: 1,x:20 }}
         transition={{duration:1.5,delay: 1}}
     >
-      <button onClick={handleDownload} className='bg-gradient-to-r from-purple-600 to-blue-500 text-white px-6 py-3 rounded-md mt-10 ms-2 hover:scale-105 hover:from-purple-700 hover:to-blue-600 transition-all duration-300'>
+      <button onClick={handleDownload} className='bg-gradient-to-r from-purple-600 to-blue-500 text-white xl:px-6 xl:py-3 text-sm xl:text-2xl px-4 py-2 rounded-md mt-10 ms-2 hover:scale-105 hover:from-purple-700 hover:to-blue-600 transition-all duration-300'>
       Download CV
     </button>
     </motion.div>
@@ -44,7 +44,7 @@ function Hero() {
     <div>
    
         <motion.img  initial={{ opacity: 0 ,x:0}}
-  whileInView={{ opacity: 1,x:-60 }} 
+  whileInView={{ opacity: 1,x:-10 }} 
   transition={{duration:1.5,delay: 1}}
   src={myimage} className='hidden lg:block sm:w-[450px] sm:h-[450px] rounded-full md:mt-25 sm:ms-15 w-[250px] h-[250px] ms-30' alt="main" />
     </div>

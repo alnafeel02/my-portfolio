@@ -73,11 +73,12 @@ const itemVariants = {
         variants={containerVariants}
           initial="hidden"
           whileInView="show"
-        className=' gap-3  flex lg:ms-25 lg:mt-20  justify-center ms-15 me-10'>
+        className=' gap-3  flex lg:ms-25 lg:mt-20 mt-10  justify-center ms-15 me-10'>
           <div className='flex  gap-3 flex-wrap mb-20'>
             {
-              picture.map((item)=>
+              picture.map((item, index)=>
                 <motion.div
+                  key={index}
                  variants={itemVariants}
                 className='lg:w-[150px] lg:h-[150px] w-[50px] h-[50px] border-4 rounded-full hover:scale-110 hover:border-purple-600 border-gray-300 justify-center flex items-center '>
                   <img className='lg:w-[100px] lg:h-[100px] w-[30px] h-[30px] lg:ms-5 lg:mt-5' src={item.image} alt="html" />
